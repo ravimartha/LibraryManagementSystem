@@ -107,6 +107,16 @@ public class AddBookPage extends AbstractClass{
 		ISBN.sendKeys(isbn);
 		PublicationDate.sendKeys(date); // valid date format: DD/MM/YYYY
 		Price.sendKeys(price);
+//		clicksubmitBtnForAddingNewBook(); // created a new method for submission
+	}
+	
+	public void addNewBookWithoutGenreSelection(String title, String author, String genreText, String isbn, String date, String price) {
+		System.out.println("Adding a new book to the catalog");
+		Title.sendKeys(title);
+		Author.sendKeys(author);
+		ISBN.sendKeys(isbn);
+		PublicationDate.sendKeys(date); // valid date format: DD/MM/YYYY
+		Price.sendKeys(price);
 		clicksubmitBtnForAddingNewBook();
 	}
 

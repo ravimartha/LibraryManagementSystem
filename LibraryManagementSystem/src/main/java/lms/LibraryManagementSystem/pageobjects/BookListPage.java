@@ -1,5 +1,6 @@
 package lms.LibraryManagementSystem.pageobjects;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.jspecify.annotations.Nullable;
@@ -50,6 +51,16 @@ public class BookListPage extends AbstractClass{
 
 	@FindBy(xpath="//table/tbody/tr/td[1]")
 	List<WebElement> BookTitles;
+	
+	@FindBy(className="button.prev-button")
+	WebElement PreviousBtn;
+	
+	@FindBy(className="button.next-button")
+	WebElement NetxBtn;
+	
+	@FindBy(css="span.self-center")
+	WebElement PageInfo;
+
 
 	//Action Methods for BookListPage
 
@@ -84,12 +95,20 @@ public class BookListPage extends AbstractClass{
 		AddBookBtn.click();
 	}
 
-	public void getTotalBookCount(String expectedTotalBooksTitles) {
-		System.out.println(TotalBooksTitles.getText());
+	public void assertTotalBookCount(String expectedTotalBooksTitles) {
 		String ExpectedTotalBooksTitles = expectedTotalBooksTitles;
-
 		String ActualTotalBooksTitles = TotalBooksTitles.getText();
+		System.out.println("Expected Total Book Titles: "+ExpectedTotalBooksTitles);
+		System.out.println("Actual Total Book Titles  : "+ActualTotalBooksTitles);
 		Assert.assertEquals(ActualTotalBooksTitles, ExpectedTotalBooksTitles);
+	}
+	
+	public void assertPageInfo(String expectedPageInfo) {
+		String ExpectedPageInfo = expectedPageInfo;
+		String ActualPageInfo = PageInfo.getText();
+		System.out.println("Expected Page Info: "+ExpectedPageInfo);
+		System.out.println("Actual Page Info  : "+ActualPageInfo);
+		Assert.assertEquals(ActualPageInfo, expectedPageInfo);
 	}
 
 
@@ -97,12 +116,48 @@ public class BookListPage extends AbstractClass{
 		for(WebElement el : BookTitles) {
 			System.out.println(el.getText());
 		}}
+	
+	public List<String> getBookTitles() {
+		 List<String> titles = new ArrayList<>();
+		    for(WebElement el : BookTitles) {
+		        titles.add(el.getText());
+		}
+		    return titles;}
 
 	public void deleteBookByTitle(String bookTitle) {
 		//table/tbody/tr/td[contains(text(),'Charlotte')]//following-sibling::td/button[1]
-		WebElement deleteBtn = driver.findElement(By.xpath("//table/tbody/tr/td[contains(text(),'"+bookTitle+"')]//following-sibling::td/button[2]"));
-		deleteBtn.click();
+//		WebElement deleteBtn = driver.findElement(By.xpath("//table/tbody/tr/td[contains(text(),'"+bookTitle+"')]//following-sibling::td/button[2]"));
+//		deleteBtn.click();
+		
+		String xpath; // code to handle single quotes in book title
+	    
+	    if (bookTitle.contains("'")) {
+	        // Handle single quotes in the book title using concat
+	        String[] parts = bookTitle.split("'");
+	        StringBuilder xpathBuilder = new StringBuilder("//table/tbody/tr/td[contains(text(), concat(");
+	        
+	        for (int i = 0; i < parts.length; i++) {
+	            xpathBuilder.append("'").append(parts[i]).append("'");
+	            if (i < parts.length - 1) {
+	                xpathBuilder.append(", \"'\", ");
+	            }
+	        }
+	        xpathBuilder.append("))]//following-sibling::td/button[2]");
+	        xpath = xpathBuilder.toString();
+	    } else {
+	        // Handle book titles without single quotes
+	        xpath = "//table/tbody/tr/td[contains(text(),'" + bookTitle + "')]//following-sibling::td/button[2]";
+	    }
+
+	    WebElement deleteBtn = driver.findElement(By.xpath(xpath));
+	    
+	    if (deleteBtn != null) {
+	        deleteBtn.click();
+	    } else {
+	        System.out.println("Book titled '" + bookTitle + "' not found.");
+	    }
 	}
+	
 
 	public void verifyBookDeletion(String bookTitle) {
 		// row count changed
@@ -120,7 +175,6 @@ public class BookListPage extends AbstractClass{
 
 
 	public @Nullable String LogOutFromApplicationAndGetURL() throws InterruptedException {
-		Thread.sleep(2000);
 		logOutBtn.click();
 		return driver.getCurrentUrl();
 	}

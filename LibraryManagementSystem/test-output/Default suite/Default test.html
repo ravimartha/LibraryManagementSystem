@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 27 14:56:00 GMT 2025</td>
+<td>Started on:</td><td>Sun Mar 02 23:17:30 GMT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37591 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54359 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,14 +77,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='lms.LibraryManagementSystem.tests.LMSTest.LogOutPageRedirectionValidation()'><b>LogOutPageRedirectionValidation</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
-<td><div><pre>java.lang.AssertionError: expected [https://applicationforlibrarymanagementsystem.onrender.com/books] but found [https://applicationforlibrarymanagementsystem.onrender.com/login]
+<td><div><pre>java.lang.AssertionError: expected [https://applicationforlibrarymanagementsystem.onrender.com/login] but found [https://applicationforlibrarymanagementsystem.onrender.com/books]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at lms.LibraryManagementSystem.tests.LMSTest.LogOutPageRedirectionValidation(LMSTest.java:216)
+	at lms.LibraryManagementSystem.tests.LMSTest.LogOutPageRedirectionValidation(LMSTest.java:322)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,15 +113,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace999864329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace999864329'><pre>java.lang.AssertionError: expected [https://applicationforlibrarymanagementsystem.onrender.com/books] but found [https://applicationforlibrarymanagementsystem.onrender.com/login]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1634001207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1634001207'><pre>java.lang.AssertionError: expected [https://applicationforlibrarymanagementsystem.onrender.com/login] but found [https://applicationforlibrarymanagementsystem.onrender.com/books]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at lms.LibraryManagementSystem.tests.LMSTest.LogOutPageRedirectionValidation(LMSTest.java:216)
+	at lms.LibraryManagementSystem.tests.LMSTest.LogOutPageRedirectionValidation(LMSTest.java:322)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,8 +151,166 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>3</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
+<td>4</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.DeleteAllBooksAndConfirmPageInfo()'><b>DeleteAllBooksAndConfirmPageInfo</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Page 1 of 1] but found [Page 1 of 0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at lms.LibraryManagementSystem.pageobjects.BookListPage.assertPageInfo(BookListPage.java:111)
+	at lms.LibraryManagementSystem.tests.LMSTest.DeleteAllBooksAndConfirmPageInfo(LMSTest.java:274)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace584349634", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace584349634'><pre>java.lang.AssertionError: expected [Page 1 of 1] but found [Page 1 of 0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at lms.LibraryManagementSystem.pageobjects.BookListPage.assertPageInfo(BookListPage.java:111)
+	at lms.LibraryManagementSystem.tests.LMSTest.DeleteAllBooksAndConfirmPageInfo(LMSTest.java:274)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithInvalidDateAndConfirm()'><b>AddBookWithInvalidDateAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td><div><pre>java.lang.AssertionError: expected [https://applicationforlibrarymanagementsystem.onrender.com/add-book] but found [https://applicationforlibrarymanagementsystem.onrender.com/books]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at lms.LibraryManagementSystem.tests.LMSTest.AddBookWithInvalidDateAndConfirm(LMSTest.java:171)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace44627686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace44627686'><pre>java.lang.AssertionError: expected [https://applicationforlibrarymanagementsystem.onrender.com/add-book] but found [https://applicationforlibrarymanagementsystem.onrender.com/books]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at lms.LibraryManagementSystem.tests.LMSTest.AddBookWithInvalidDateAndConfirm(LMSTest.java:171)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -163,60 +321,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithBlankTitleAndConfirm()'><b>AddBookWithBlankTitleAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithBlankAuthorAndConfirm()'><b>AddBookWithBlankAuthorAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
 <td></td>
 <td>2</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
 <tr>
-<td title='lms.LibraryManagementSystem.tests.LMSTest.InvalidUserLoginFailErrorMessageValidation()'><b>InvalidUserLoginFailErrorMessageValidation</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
-<td></td>
-<td>1</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
-<tr>
-<td title='lms.LibraryManagementSystem.tests.LMSTest.editBookWithValidateAndConfirm()'><b>editBookWithValidateAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithBlankISBNAndConfirm()'><b>AddBookWithBlankISBNAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
 <td></td>
 <td>2</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
 <tr>
-<td title='lms.LibraryManagementSystem.tests.LMSTest.editBookWithBlankTitleAndConfirm()'><b>editBookWithBlankTitleAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithInvalidDataOrBlankSubmissionAndConfirm()'><b>AddBookWithInvalidDataOrBlankSubmissionAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
 <td></td>
 <td>2</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
-<tr>
-<td title='lms.LibraryManagementSystem.tests.LMSTest.InvokeLoginPageFromTaskPageLink()'><b>InvokeLoginPageFromTaskPageLink</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
-<td></td>
-<td>3</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
-<tr>
-<td title='lms.LibraryManagementSystem.tests.LMSTest.LoginWithBlankSubmissionErrorMessageValidation()'><b>LoginWithBlankSubmissionErrorMessageValidation</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
-<td></td>
-<td>1</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
 <tr>
 <td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookAndConfirm()'><b>AddBookAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
 <td></td>
 <td>4</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.EditBookPageURLCheck()'><b>EditBookPageURLCheck</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td></td>
+<td>1</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
 <tr>
 <td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookPageURLCheck()'><b>AddBookPageURLCheck</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
 <td></td>
 <td>2</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
 <tr>
-<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithInvalidDataAndConfirm()'><b>AddBookWithInvalidDataAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.InvalidUserLoginFailErrorMessageValidation()'><b>InvalidUserLoginFailErrorMessageValidation</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td></td>
+<td>1</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.editBookWithBlankTitleAndConfirm()'><b>editBookWithBlankTitleAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
 <td></td>
 <td>2</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithBlankGenreAndConfirm()'><b>AddBookWithBlankGenreAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td></td>
+<td>2</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
 <tr>
 <td title='lms.LibraryManagementSystem.tests.LMSTest.DeleteBookAndConfirm()'><b>DeleteBookAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
 <td></td>
-<td>4</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
+<td>2</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
 <tr>
-<td title='lms.LibraryManagementSystem.tests.LMSTest.EditBookPageURLCheck()'><b>EditBookPageURLCheck</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.InvokeLoginPageFromTaskPageLink()'><b>InvokeLoginPageFromTaskPageLink</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
 <td></td>
-<td>3</td>
-<td>lms.LibraryManagementSystem.tests.LMSTest@470734c3</td></tr>
+<td>1</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithBlankPriceAndConfirm()'><b>AddBookWithBlankPriceAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td></td>
+<td>2</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.LoginWithBlankSubmissionErrorMessageValidation()'><b>LoginWithBlankSubmissionErrorMessageValidation</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td></td>
+<td>1</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.editBookWithValidateAndConfirm()'><b>editBookWithValidateAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td></td>
+<td>2</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithBlankDateAndConfirm()'><b>AddBookWithBlankDateAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td></td>
+<td>2</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
+<tr>
+<td title='lms.LibraryManagementSystem.tests.LMSTest.AddBookWithBlankTitleAndConfirm()'><b>AddBookWithBlankTitleAndConfirm</b><br>Test class: lms.LibraryManagementSystem.tests.LMSTest</td>
+<td></td>
+<td>2</td>
+<td>lms.LibraryManagementSystem.tests.LMSTest@17f62e33</td></tr>
 </table><p>
 </body>
 </html>

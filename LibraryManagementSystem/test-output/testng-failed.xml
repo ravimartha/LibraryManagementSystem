@@ -5,8 +5,10 @@
     <classes>
       <class name="lms.LibraryManagementSystem.tests.LMSTest">
         <methods>
+          <include name="AddBookWithInvalidDateAndConfirm"/>
           <include name="tearDown"/>
           <include name="LogOutPageRedirectionValidation"/>
+          <include name="DeleteAllBooksAndConfirmPageInfo"/>
         </methods>
       </class> <!-- lms.LibraryManagementSystem.tests.LMSTest -->
     </classes>
